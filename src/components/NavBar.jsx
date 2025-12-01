@@ -93,7 +93,7 @@ export default function NavBar() {
         {/* LOGO */}
         <Link href="/" className="flex items-center gap-2">
           <Image
-            src="/Logo.jpg"
+            src="/pet-logo.jpg"
             alt="Logo"
             width={55}
             height={55}
@@ -171,10 +171,10 @@ export default function NavBar() {
           </div>
         ) : (
           <>
-            <Link href="/Auth/login">
+            <Link href="/auth/login">
               <button className="btn btn-primary">Login</button>
             </Link>
-            <Link href="/Auth/register">
+            <Link href="/auth/register">
               <button className="btn btn-secondary ml-2">Register</button>
             </Link>
           </>
