@@ -10,6 +10,7 @@ import { FaSun } from "react-icons/fa";
 
 export default function NavBar() {
   const { user, signOutUser } = useContext(AuthContext);
+  console.log(user)
 
   const handleSignOut = () => {
     signOutUser()
@@ -133,7 +134,7 @@ export default function NavBar() {
         {user ? (
           <div className="dropdown dropdown-end">
             <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-              <div className="w-10 rounded-full border border-secondary overflow-hidden">
+              <div className="w-10 h-10 rounded-full overflow-hidden border border-green-500">
                 <Image
                   src={
                     user.photoURL ||

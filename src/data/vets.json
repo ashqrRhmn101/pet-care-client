@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Dr. Sarah Johnson",
+    "photo": "https://i.ibb.co.com/dsMLdZ7p/dctr1.jpg",
+    "specialty": "Pet Nutritionist"
+  },
+  {
+    "id": 2,
+    "name": "Dr. Mark Lee",
+    "photo": "https://i.ibb.co.com/S76RgKy2/dctr2.jpg",
+    "specialty": "Veterinary Surgeon"
+  },
+  {
+    "id": 3,
+    "name": "Dr. Emma Brown",
+    "photo": "https://i.ibb.co.com/dwNGh5jX/dctr3.jpg",
+    "specialty": "Pet Behaviorist"
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "title": "Keep Your Pets Warm",
+    "description": "Use cozy blankets and sweaters to keep your pets warm during winter."
+  },
+  {
+    "id": 2,
+    "title": "Proper Nutrition",
+    "description": "Provide high-quality food and increase calorie intake if needed."
+  },
+  {
+    "id": 3,
+    "title": "Hydration",
+    "description": "Ensure pets have access to fresh water as they may drink less in winter."
+  }
+]

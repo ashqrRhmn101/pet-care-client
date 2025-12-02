@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Cozy Pet Blanket",
+    "img": "https://i.ibb.co.com/mrNTMtYd/es1.jpg",
+    "desc": "Keep your pets warm and comfortable with soft fleece blankets."
+  },
+  {
+    "id": 2,
+    "name": "Winter Paw Cream",
+    "img": "https://i.ibb.co.com/BHq7mDKs/es2.jpg",
+    "desc": "Protect your pet’s paws from cracks and dryness in cold weather."
+  },
+  {
+    "id": 3,
+    "name": "Warm Sweater",
+    "img": "https://i.ibb.co.com/6RpQh7BJ/es3.jpg",
+    "desc": "A stylish and cozy sweater to keep your furry friend warm."
+  },
+  {
+    "id": 4,
+    "name": "Nutritious Winter Food",
+    "img": "https://i.ibb.co.com/GvGLqbZx/es4.jpg",
+    "desc": "Specially formulated pet food to boost immunity during winter."
+  }
+]

@@ -49,7 +49,7 @@ export default function Register() {
 
         userProfile(profileData)
           .then(() => {
-            console.log("Profile Updated ✔️");
+            // console.log("Profile Updated");
 
             // Set Cookie
             // setCookie("authUser", result.user.uid, { path: "/" });
@@ -75,7 +75,7 @@ export default function Register() {
         <fieldset className="fieldset rounded-box p-4">
 
           <h2 className="text-3xl font-bold text-[#03373D]">Create Account</h2>
-          <p className="text-lg">Register with ZapShift</p>
+          <p className="text-lg">Register with Pet Care</p>
 
           {/* 🔥 Show Error */}
           {regError && (
