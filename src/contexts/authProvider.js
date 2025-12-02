@@ -65,6 +65,7 @@ export default function AuthProvider({ children }) {
 
   const authInfo = {
     user,
+    setUser,
     loading,
     registerUser,
     userProfile,

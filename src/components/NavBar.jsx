@@ -10,7 +10,7 @@ import { FaSun } from "react-icons/fa";
 
 export default function NavBar() {
   const { user, signOutUser } = useContext(AuthContext);
-  console.log(user)
+  console.log(user);
 
   const handleSignOut = () => {
     signOutUser()
@@ -58,6 +58,19 @@ export default function NavBar() {
           Shop
         </Link>
       </li>
+
+      {user && (
+        <>
+          <li>
+            <Link
+              href="/myProfile"
+              className="font-semibold text-primary hover:text-secondary"
+            >
+              My Profile
+            </Link>
+          </li>
+        </>
+      )}
     </>
   );
 
@@ -158,10 +171,10 @@ export default function NavBar() {
                 {user.email}
               </li>
               <li>
-                <Link href="/my-profile">Profile</Link>
+                <Link href="/myProfile">Profile</Link>
               </li>
               <li>
-                <Link href="/settings">Settings</Link>
+                <Link href="/">Settings</Link>
               </li>
               <li>
                 <button onClick={handleSignOut} className="text-red-500">
