@@ -9,10 +9,11 @@ import {
   updateProfile,
 } from "firebase/auth";
 import { AuthContext } from "./authContext";
-import { auth } from "@/firebase/firebase.config";
+// import { auth } from "@/firebase/firebase.config";
 import { useEffect, useState } from "react";
 
 import { GoogleAuthProvider } from "firebase/auth";
+import { auth } from "@/lib/firebase";
 
 const googleProvider = new GoogleAuthProvider();
 

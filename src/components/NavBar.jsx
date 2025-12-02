@@ -44,18 +44,18 @@ export default function NavBar() {
       </li>
       <li>
         <Link
-          href="/services"
+          href="/services/allServices"
           className="font-semibold text-primary hover:text-secondary"
         >
-          Services
+          All Services
         </Link>
       </li>
       <li>
         <Link
-          href="/my-profile"
+          href="/shop/allProducts"
           className="font-semibold text-primary hover:text-secondary"
         >
-          My Profile
+          Shop
         </Link>
       </li>
     </>
