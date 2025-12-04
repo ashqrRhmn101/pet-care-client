@@ -8,8 +8,21 @@ import {
   FaXTwitter,
   FaLinkedin,
 } from "react-icons/fa6";
+import { useEffect, useState } from "react";
 
 const Footer = () => {
+
+
+
+const FooterYear = () => {
+  const [year, setYear] = useState(null);
+  useEffect(() => {
+    setYear(new Date().getFullYear());
+  }, []);
+  return <>{year}</>;
+};
+
+
   return (
     <div className="bg-primary mt-16 border-t border-gray-300 text-white">
       {/* Top Footer */}
@@ -27,9 +40,7 @@ const Footer = () => {
 
             {/* Gradient Title (matching theme) */}
             <h1
-              className="text-3xl font-extrabold 
-          bg-gradient-to-r from-[#ffffff] to-[#F7A703]
-          bg-clip-text text-transparent"
+              className="text-3xl font-extrabold bg-gradient-to-r from-[#ffffff] to-[#F7A703] bg-clip-text text-transparent"
             >
               Pate Care
             </h1>
@@ -79,7 +90,7 @@ const Footer = () => {
       <footer className="footer border-t border-gray-500 px-10 py-5 max-w-7xl mx-auto">
         <aside>
           <p className="text-sm text-gray-200">
-            © {new Date().getFullYear()} Pate Care
+            © <FooterYear/> Pate Care
             <br /> Love, care and safety for pets.
           </p>
         </aside>

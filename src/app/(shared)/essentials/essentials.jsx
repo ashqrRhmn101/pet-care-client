@@ -34,11 +34,7 @@ export default function Essentials() {
             <div
               data-aos="zoom-in-up"
               key={item.id}
-              className="
-                card bg-base-100 shadow-md border border-base-300 
-                hover:shadow-xl hover:-translate-y-1 
-                transition-all duration-300
-              "
+              className="card bg-base-100 shadow-md border border-base-300 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
             >
               <figure className="h-48 overflow-hidden">
                 <Image

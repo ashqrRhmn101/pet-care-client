@@ -13,10 +13,14 @@ export default function AllServicesCard() {
   // Fetch services
   useEffect(() => {
     const fetchServices = async () => {
-      const res = await fetch("https://pet-care-server-ten.vercel.app/services", {
-        cache: "no-store",
-      });
+      const res = await fetch(
+        "https://pet-care-server-ten.vercel.app/services",
+        {
+          cache: "no-store",
+        }
+      );
       const data = await res.json();
+      // console.log(data)
       setProducts(data);
     };
 
@@ -53,7 +57,6 @@ export default function AllServicesCard() {
             {products.map((card) => (
               <div key={card._id} data-aos="fade-up">
                 <div className="bg-white shadow-lg rounded-2xl overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 flex flex-col h-full border border-gray-100">
-                  
                   {/* Image */}
                   <div className="relative overflow-hidden h-52 bg-gray-100">
                     <Image
@@ -86,7 +89,6 @@ export default function AllServicesCard() {
                     </div>
 
                     <div className="space-y-3">
-                      
                       {/* Price */}
                       <div className="flex justify-between items-center pt-3 border-t border-gray-100">
                         <span className="text-gray-600 text-sm font-medium">
@@ -113,7 +115,9 @@ export default function AllServicesCard() {
           {/* Empty state */}
           {products.length === 0 && (
             <div className="text-center py-16">
-              <p className="text-gray-500 text-lg"><Loading/></p>
+              <div className="text-gray-500 text-lg">
+                <Loading />
+              </div>
             </div>
           )}
         </div>

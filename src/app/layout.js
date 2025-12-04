@@ -21,15 +21,15 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" data-theme="patecare-light">
+    <html lang="en" data-theme="patecare-light" className="hydrated">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen container mx-auto`}
       >
         <Provider>
           <NavBar />
           <div className="flex-1">{children}</div>
-          <Footer />
         </Provider>
+        <Footer />
       </body>
     </html>
   );

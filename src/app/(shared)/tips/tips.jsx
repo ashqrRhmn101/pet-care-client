@@ -17,7 +17,6 @@ export default function Tips() {
   return (
     <section className="py-16 bg-base-200">
       <div className="container mx-auto px-6 md:px-12">
-        
         {/* Section Title */}
         <h2
           data-aos="fade-down"
@@ -33,12 +32,7 @@ export default function Tips() {
             <div
               key={tip.id}
               data-aos="zoom-in-up"
-              className="
-                card bg-base-100 shadow-md hover:shadow-xl 
-                border border-base-300 
-                transition-all duration-300 
-                hover:-translate-y-1
-              "
+              className="card bg-base-100 shadow-md hover:shadow-xl border-base-300 transition-all duration-300 hover:-translate-y-1"
             >
               <div className="card-body">
                 <h3 className="card-title text-lg md:text-xl text-primary font-semibold">
@@ -58,7 +52,6 @@ export default function Tips() {
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );
