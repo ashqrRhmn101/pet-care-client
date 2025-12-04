@@ -1,3 +1,5 @@
+// 'use client'
+
 import Image from "next/image";
 import Link from "next/link";
 
@@ -31,6 +33,10 @@ export default async function ServiceDetails({ params }) {
     );
   }
 
+  // const handleBook = (p) => {
+  //   console.log("submit");
+  // };
+
   return (
     <div className="max-w-6xl mx-auto my-12 px-5">
       {/* Back Button */}
@@ -42,7 +48,6 @@ export default async function ServiceDetails({ params }) {
       </Link>
 
       <div className="bg-white shadow-xl rounded-2xl p-6 md:p-10 grid grid-cols-1 md:grid-cols-2 gap-10 border">
-        
         {/* IMAGE */}
         <div className="flex justify-center items-center">
           <Image
@@ -70,9 +75,7 @@ export default async function ServiceDetails({ params }) {
 
           {/* Price */}
           <div className="flex justify-between items-center border-b pb-4">
-            <p className="text-2xl font-bold text-blue-700">
-              ${product.price}
-            </p>
+            <p className="text-2xl font-bold text-blue-700">${product.price}</p>
             <span className="px-3 py-1 bg-green-100 text-green-700 text-xs rounded-full">
               Slots: {product.slotsAvailable}
             </span>
@@ -93,16 +96,17 @@ export default async function ServiceDetails({ params }) {
 
           {/* Description */}
           <div className="pt-4 border-t">
-            <h3 className="text-lg font-semibold text-gray-800">
-              Description
-            </h3>
+            <h3 className="text-lg font-semibold text-gray-800">Description</h3>
             <p className="text-gray-600 mt-2 leading-relaxed">
               {product.description}
             </p>
           </div>
 
           {/* Book Button */}
-          <button className="w-full bg-blue-700 hover:bg-blue-800 text-white font-bold py-3 rounded-lg transition shadow-md">
+          <button
+            // onClick={() => handleBook(p)}
+            className="w-full bg-blue-700 hover:bg-blue-800 text-white font-bold py-3 rounded-lg transition shadow-md"
+          >
             Book Now
           </button>
         </div>
