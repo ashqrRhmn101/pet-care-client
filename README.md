@@ -1,6 +1,6 @@
-# 🐾 Pate Care – All-in-One Pet Care & Shopping Platform
+# 🐾 Pet Care – All-in-One Pet Care & Shopping Platform
 
-**Pate Care** is a modern, user-friendly full-stack web application designed for pet lovers. Book professional pet care services, shop premium pet products, and manage everything in one place!
+**Pet Care** is a modern, user-friendly full-stack web application designed for pet lovers. Book professional pet care services, shop premium pet products, and manage everything in one place!
 
 From grooming & vet appointments to toys, food & accessories — we've got your furry friends covered.
 
